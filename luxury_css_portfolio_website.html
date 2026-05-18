@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ushm Essence - Luxury Experience</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+body{
+  background:#0b0b0b;
+  color:white;
+  overflow-x:hidden;
+}
+
+header{
+  height:100vh;
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1400') center/cover;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+header h1{
+  font-size:4rem;
+  letter-spacing:3px;
+}
+
+header p{
+  margin-top:15px;
+  font-size:1.2rem;
+  color:#d4af37;
+}
+
+.btn{
+  margin-top:25px;
+  padding:12px 30px;
+  background:#d4af37;
+  border:none;
+  border-radius:30px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.08);
+}
+
+.products{
+  padding:60px 10%;
+}
+
+.products h2{
+  text-align:center;
+  margin-bottom:40px;
+  font-size:2.5rem;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:#1a1a1a;
+  padding:20px;
+  border-radius:20px;
+  text-align:center;
+  box-shadow:0px 8px 25px rgba(212,175,55,0.2);
+  transition:0.4s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  border-radius:15px;
+}
+
+.card h3{
+  margin-top:15px;
+}
+
+.card p{
+  margin:10px 0;
+  color:#d4af37;
+}
+
+.about{
+  padding:80px 10%;
+  text-align:center;
+  background:#111;
+}
+
+.about h2{
+  font-size:2.5rem;
+  margin-bottom:20px;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:black;
+  color:gray;
+}
+
+@media(max-width:768px){
+  header h1{
+    font-size:2.5rem;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>USHM ESSENCE</h1>
+  <p>Luxury Fragrances Inspired By India</p>
+  <button class="btn">Explore Collection</button>
+</header>
+
+<section class="products">
+  <h2>Our Premium Collection</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=800" alt="Candle">
+      <h3>Nirvana Candle</h3>
+      <p>₹499</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=800" alt="Perfume">
+      <h3>Royal Oud Perfume</h3>
+      <p>₹899</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=800" alt="Gift">
+      <h3>Luxury Gift Box</h3>
+      <p>₹1299</p>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <h2>Why Ushm?</h2>
+  <p>We create immersive fragrance experiences inspired by Indian heritage, storytelling, and luxury craftsmanship.</p>
+</section>
+
+<footer>
+  <p>© 2026 Ushm Essence | Crafted with CSS</p>
+</footer>
+
+</body>
+</html>
